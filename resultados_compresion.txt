@@ -1,0 +1,164 @@
+resultados compresion
+
+Archivos originales
+Nombre: ./audio/example3.ogg
+Tamaño: 3.6K
+---
+Nombre: ./audio/file_example_MP3_700KB.mp3
+Tamaño: 717K
+---
+Nombre: ./audio/example1.wav
+Tamaño: 399
+---
+Nombre: ./audio/file_example_OOG_2MG.ogg
+Tamaño: 2.1M
+---
+Nombre: ./audio/example2.mp3
+Tamaño: 1.7K
+---
+Nombre: ./resultados_compresion.txtv
+Tamaño: 1.2K
+---
+Nombre: ./imagenes/prueba.png
+Tamaño: 379
+---
+Nombre: ./imagenes/foto.bmp
+Tamaño: 398
+---
+Nombre: ./imagenes/Fronalpstock_big.jpg
+Tamaño: 14M
+---
+Nombre: ./imagenes/tierra.gif
+Tamaño: 2.0K
+---
+Nombre: ./imagenes/Rotating_earth_(large).gif
+Tamaño: 979K
+---
+Nombre: ./imagenes/montaña.jpg
+Tamaño: 22K
+---
+Nombre: ./resultados_compresion.txt
+Tamaño: 43
+---
+Nombre: ./video/video_corto_2.webm
+Tamaño: 2.1K
+---
+Nombre: ./video/Big_Buck_Bunny_1080_10s_1MB.mp4
+Tamaño: 1023K
+---
+Nombre: ./video/video_corto.mp4
+Tamaño: 2.1K
+---
+Nombre: ./video/Big_Buck_Bunny_360_10s_1MB.webm
+Tamaño: 1.1M
+---
+Nombre: ./texto/pride_and_prejudice.txt
+Tamaño: 1.6K
+---
+Nombre: ./texto/1342-0.txt
+Tamaño: 721K
+---
+Nombre: ./texto/dummy.pdf
+Tamaño: 523
+---
+Nombre: ./texto/ejemplo.md
+Tamaño: 427
+---
+Nombre: ./texto/dummy.pdf.1
+Tamaño: 13K
+---
+
+Compresion con gzip
+Comando: gzip -v pride_and_prejudice.txt
+pride_and_prejudice.txt:	 73.0% -- replaced with pride_and_prejudice.txt.gz
+-rw-rw-r-- 1 ubuntu ubuntu 469 Feb 23 14:35 pride_and_prejudice.txt.gz
+
+Comando: gzip -v montaña.jpg
+montaña.jpg:	 89.2% -- replaced with montaña.jpg.gz
+-rw-rw-r-- 1 ubuntu ubuntu 2.4K Feb 23 14:39 montaña.jpg.gz
+
+ Descompresion con gunzip
+Comando: gunzip -v pride_and_prejudice.txt.gz
+pride_and_prejudice.txt.gz:	 73.0% -- replaced with pride_and_prejudice.txt
+-rw-rw-r-- 1 ubuntu ubuntu 1.6K Feb 23 14:35 pride_and_prejudice.txt
+
+Comando: gunzip -v montaña.jpg.gz
+montaña.jpg.gz:	 89.2% -- replaced with montaña.jpg
+-rw-rw-r-- 1 ubuntu ubuntu 22K Feb 23 14:39 montaña.jpg
+
+ Compresion con ZIP
+Comando: rar a audio.rar *.wav
+Command 'rar' not found, but can be installed with:
+sudo apt install rar
+
+RAR 7.00   Copyright (c) 1993-2024 Alexander Roshal   26 Feb 2024
+Trial version             Type 'rar -?' for help
+
+Evaluation copy. Please register.
+
+Creating archive audio.rar
+
+Adding    example1.wav                                                   100%  OK 
+Done
+-rw-rw-r-- 1 ubuntu ubuntu 347 Feb 23 15:49 audio.rar
+
+Comando: rar a video.rar *.mp4
+
+RAR 7.00   Copyright (c) 1993-2024 Alexander Roshal   26 Feb 2024
+Trial version             Type 'rar -?' for help
+
+Evaluation copy. Please register.
+
+Creating archive video.rar
+
+Adding    Big_Buck_Bunny_1080_10s_1MB.mp4                                 99%  OK 
+Adding    video_corto.mp4                                                100%  OK 
+Done
+-rw-rw-r-- 1 ubuntu ubuntu 1020K Feb 23 15:56 video.rar
+
+=== Descompresion con UNRAR ===
+Comando: unrar x ../audio/audio.rar
+
+UNRAR 7.00 freeware      Copyright (c) 1993-2024 Alexander Roshal
+
+
+Extracting from ../audio/audio.rar
+
+Extracting  example1.wav                                                 100%  OK 
+All OK
+total 4.0K
+-rw-rw-r-- 1 ubuntu ubuntu 399 Feb 23 14:46 example1.wav
+Comando: unrar x ../video/video.rar
+
+UNRAR 7.00 freeware      Copyright (c) 1993-2024 Alexander Roshal
+
+
+Extracting from ../video/video.rar
+
+Extracting  Big_Buck_Bunny_1080_10s_1MB.mp4                               99%  OK 
+Extracting  video_corto.mp4                                              100%  OK 
+All OK
+total 1.1M
+-rw-rw-r-- 1 ubuntu ubuntu 1023K Nov 29  2021 Big_Buck_Bunny_1080_10s_1MB.mp4
+-rw-rw-r-- 1 ubuntu ubuntu   399 Feb 23 14:46 example1.wav
+-rw-rw-r-- 1 ubuntu ubuntu  2.1K Feb 23 14:49 video_corto.mp4
+
+Comando: zip texto.zip *.txt *.md *.pdf
+  adding: 1342-0.txt (deflated 64%)
+  adding: pride_and_prejudice.txt (deflated 73%)
+  adding: ejemplo.md (deflated 48%)
+  adding: dummy.pdf (deflated 41%)
+-rw-rw-r-- 1 ubuntu ubuntu 262K Feb 23 23:14 texto.zip
+
+=== Descompresion con unzip===
+Comando: unzip ../texto/texto.zip
+Archive:  ../texto/texto.zip
+  inflating: 1342-0.txt              
+  inflating: pride_and_prejudice.txt  
+  inflating: ejemplo.md              
+  inflating: dummy.pdf               
+total 736K
+-rw-rw-r-- 1 ubuntu ubuntu 721K Feb 10 17:53 1342-0.txt
+-rw-rw-r-- 1 ubuntu ubuntu  523 Feb 23 14:36 dummy.pdf
+-rw-rw-r-- 1 ubuntu ubuntu  427 Feb 23 14:36 ejemplo.md
+-rw-rw-r-- 1 ubuntu ubuntu 1.6K Feb 23 14:35 pride_and_prejudice.txt
