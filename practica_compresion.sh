@@ -307,7 +307,7 @@ echo "" >> ../resultados_compresion.txt
 
 echo "Decompresion con unzip" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
-rf montaña.jpg prueba.png foto.bmp
+rm montaña.jpg prueba.png foto.bmp
 
 echo "----------------------" >> ../resultados_compresion.txt
 echo "Comando: unzip montaña.zip" >> ../resultados_compresion.txt
