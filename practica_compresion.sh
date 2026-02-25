@@ -81,7 +81,7 @@ ruta_base=$(pwd) && archivo="ejemplo.md.gz" && ruta_absoluta="$ruta_base/$archiv
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v ejemplo.md.gz
 ruta_base=$(pwd) && archivo="ejemplo.md" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -90,7 +90,7 @@ ruta_base=$(pwd) && archivo="texto.txt.gz" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v texto.txt.gz
 ruta_base=$(pwd) && archivo="texto.txt" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con zip" >> ../resultados_compresion.txt
@@ -133,7 +133,7 @@ ruta_base=$(pwd) && archivo="ejemplo.zip" && ruta_absoluta="$ruta_base/$archivo"
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip ejemplo.zip
 ruta_base=$(pwd) && archivo="ejemplo.md" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -142,7 +142,7 @@ ruta_base=$(pwd) && archivo="dummy.zip" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip dummy.zip
 ruta_base=$(pwd) && archivo="dummy.pdf" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -151,7 +151,7 @@ ruta_base=$(pwd) && archivo="texto.zip" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip texto.zip
 ruta_base=$(pwd) && archivo="texto.txt" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con rar" >> ../resultados_compresion.txt
@@ -193,7 +193,7 @@ ruta_base=$(pwd) && archivo="ejemplo.rar" && ruta_absoluta="$ruta_base/$archivo"
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x ejemplo.rar
 ruta_base=$(pwd) && archivo="ejemplo.md" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -202,7 +202,7 @@ ruta_base=$(pwd) && archivo="dummy.rar" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x dummy.rar
 ruta_base=$(pwd) && archivo="dummy.pdf" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -211,7 +211,7 @@ ruta_base=$(pwd) && archivo="texto.rar" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x texto.rar
 ruta_base=$(pwd) && archivo="texto.txt" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 cd ../imagen
@@ -254,7 +254,7 @@ ruta_base=$(pwd) && archivo="montaña.jpg.gz" && ruta_absoluta="$ruta_base/$arch
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v montaña.jpg.gz
 ruta_base=$(pwd) && archivo="montaña.jpg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -263,7 +263,7 @@ ruta_base=$(pwd) && archivo="prueba.png.gz" && ruta_absoluta="$ruta_base/$archiv
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v prueba.png.gz
 ruta_base=$(pwd) && archivo="prueba.png" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -272,7 +272,7 @@ ruta_base=$(pwd) && archivo="foto.bmp.gz" && ruta_absoluta="$ruta_base/$archivo"
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v foto.bmp.gz
 ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con zip" >> ../resultados_compresion.txt
@@ -315,7 +315,7 @@ ruta_base=$(pwd) && archivo="montaña.zip" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip montaña.zip
 ruta_base=$(pwd) && archivo="montaña.jpg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -324,7 +324,7 @@ ruta_base=$(pwd) && archivo="prueba.zip" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip prueba.zip
 ruta_base=$(pwd) && archivo="prueba.png" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -333,7 +333,7 @@ ruta_base=$(pwd) && archivo="foto.zip" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip foto.zip
 ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con rar" >> ../resultados_compresion.txt
@@ -376,7 +376,7 @@ ruta_base=$(pwd) && archivo="montaña.rar" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x montaña.rar
 ruta_base=$(pwd) && archivo="montaña.jpg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -385,7 +385,7 @@ ruta_base=$(pwd) && archivo="prueba.rar" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x prueba.rar
 ruta_base=$(pwd) && archivo="prueba.png" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -394,7 +394,7 @@ ruta_base=$(pwd) && archivo="foto.rar" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x foto.rar
 ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 cd ../audio
@@ -437,7 +437,7 @@ ruta_base=$(pwd) && archivo="example1.wav.gz" && ruta_absoluta="$ruta_base/$arch
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v example1.wav.gz
 ruta_base=$(pwd) && archivo="example1.wav" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -446,7 +446,7 @@ ruta_base=$(pwd) && archivo="example2.mp3.gz" && ruta_absoluta="$ruta_base/$arch
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v example2.mp3.gz
 ruta_base=$(pwd) && archivo="example2.mp3" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -455,7 +455,7 @@ ruta_base=$(pwd) && archivo="example3.ogg.gz" && ruta_absoluta="$ruta_base/$arch
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v example3.ogg.gz
 ruta_base=$(pwd) && archivo="example3.ogg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -501,7 +501,7 @@ ruta_base=$(pwd) && archivo="example1.zip" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip example1.zip
 ruta_base=$(pwd) && archivo="example1.wav" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -511,7 +511,7 @@ ruta_base=$(pwd) && archivo="example2.zip" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip example2.zip
 ruta_base=$(pwd) && archivo="example2.mp3" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -521,7 +521,7 @@ ruta_base=$(pwd) && archivo="example3.zip" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip example3.zip
 ruta_base=$(pwd) && archivo="example3.ogg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con rar" >> ../resultados_compresion.txt
@@ -567,7 +567,7 @@ ruta_base=$(pwd) && archivo="example1.rar" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x example1.rar
 ruta_base=$(pwd) && archivo="example1.wav" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -577,7 +577,7 @@ ruta_base=$(pwd) && archivo="example2.rar" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x example2.rar
 ruta_base=$(pwd) && archivo="example2.mp3" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -587,7 +587,7 @@ ruta_base=$(pwd) && archivo="example3.rar" && ruta_absoluta="$ruta_base/$archivo
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x example3.rar
 ruta_base=$(pwd) && archivo="example3.ogg" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 cd ../videoecho "Compresion con gzip" >> ../resultados_compresion.txt
@@ -631,7 +631,7 @@ ruta_base=$(pwd) && archivo="video_corto.mp4.gz" && ruta_absoluta="$ruta_base/$a
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v video_corto.mp4.gz
 ruta_base=$(pwd) && archivo="video_corto.mp4" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -640,7 +640,7 @@ ruta_base=$(pwd) && archivo="video_corto_2.avi.gz" && ruta_absoluta="$ruta_base/
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v video_corto_2.avi.gz
 ruta_base=$(pwd) && archivo="video_corto_2.avi" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
@@ -649,7 +649,7 @@ ruta_base=$(pwd) && archivo="video_corto_3.mov.gz" && ruta_absoluta="$ruta_base/
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 gunzip -v video_corto_3.mov.gz
 ruta_base=$(pwd) && archivo="video_corto_3.mov" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con zip" >> ../resultados_compresion.txt
@@ -694,7 +694,7 @@ ruta_base=$(pwd) && archivo="video.zip" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip video.zip
 ruta_base=$(pwd) && archivo="video_corto.mp4" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -704,7 +704,7 @@ ruta_base=$(pwd) && archivo="video2.zip" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip video2.zip
 ruta_base=$(pwd) && archivo="video_corto_2.avi" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -714,7 +714,7 @@ ruta_base=$(pwd) && archivo="video3.zip" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unzip video3.zip
 ruta_base=$(pwd) && archivo="video_corto_3.mov" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -761,7 +761,7 @@ ruta_base=$(pwd) && archivo="video.rar" && ruta_absoluta="$ruta_base/$archivo" &
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x video.rar
 ruta_base=$(pwd) && archivo="video_corto.mp4" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -771,7 +771,7 @@ ruta_base=$(pwd) && archivo="video2.rar" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x video2.rar
 ruta_base=$(pwd) && archivo="video_corto_2.avi" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
@@ -781,7 +781,7 @@ ruta_base=$(pwd) && archivo="video3.rar" && ruta_absoluta="$ruta_base/$archivo" 
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 unrar x video3.rar
 ruta_base=$(pwd) && archivo="video_corto_3.mov" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
-echo "Tamanho recuperado: $tamano" >> ../resultados_compresion.txt
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 
