@@ -2,33 +2,43 @@ resultados compresion
 
 Archivos originales
 Nombre: ./audio/example3.ogg
+Ruta: /etc/ubuntu/practica_compresion/audio/
 Tamaño: 3.6K
 ---
 Nombre: ./audio/file_example_MP3_700KB.mp3
+Ruta: /etc/ubuntu/practica_compresion/audio/
 Tamaño: 717K
 ---
 Nombre: ./audio/example1.wav
+Ruta: /etc/ubuntu/practica_compresion/audio/
 Tamaño: 399
 ---
 Nombre: ./audio/file_example_OOG_2MG.ogg
+Ruta: /etc/ubuntu/practica_compresion/audio/
 Tamaño: 2.1M
 ---
 Nombre: ./audio/example2.mp3
+Ruta: /etc/ubuntu/practica_compresion/audio/
 Tamaño: 1.7K
 ---
 Nombre: ./resultados_compresion.txtv
+Ruta: /etc/ubuntu/practica_compresion/
 Tamaño: 1.2K
 ---
 Nombre: ./imagenes/prueba.png
+Ruta: /etc/ubuntu/practica_compresion/imagenes/
 Tamaño: 379
 ---
 Nombre: ./imagenes/foto.bmp
+Ruta: /etc/ubuntu/practica_compresion/imagenes/
 Tamaño: 398
 ---
 Nombre: ./imagenes/Fronalpstock_big.jpg
+Ruta: /etc/ubuntu/practica_compresion/imagenes/
 Tamaño: 14M
 ---
 Nombre: ./imagenes/tierra.gif
+Ruta: /etc/ubuntu/practica_compresion/imagenes/
 Tamaño: 2.0K
 ---
 Nombre: ./imagenes/Rotating_earth_(large).gif
