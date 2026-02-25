@@ -1,174 +1,164 @@
-resultados compresion
+=== RESULTADOS DE COMPRESIÓN ===
+Fecha: Wed Feb 25 02:28:35 UTC 2026
 
 Archivos originales
-Nombre: ./audio/example3.ogg
-Ruta: /etc/ubuntu/practica_compresion/audio/
+
+Nombre: example3.ogg
+Ruta: ./audio/example3.ogg
+Tipo: Audio (OGG)
 Tamaño: 3.6K
 ---
-Nombre: ./audio/file_example_MP3_700KB.mp3
-Ruta: /etc/ubuntu/practica_compresion/audio/
-Tamaño: 717K
----
-Nombre: ./audio/example1.wav
-Ruta: /etc/ubuntu/practica_compresion/audio/
+Nombre: example1.wav
+Ruta: ./audio/example1.wav
+Tipo: Audio (WAV)
 Tamaño: 399
 ---
-Nombre: ./audio/file_example_OOG_2MG.ogg
-Ruta: /etc/ubuntu/practica_compresion/audio/
-Tamaño: 2.1M
----
-Nombre: ./audio/example2.mp3
-Ruta: /etc/ubuntu/practica_compresion/audio/
+Nombre: example2.mp3
+Ruta: ./audio/example2.mp3
+Tipo: Audio (MP3)
 Tamaño: 1.7K
 ---
-Nombre: ./resultados_compresion.txtv
-Ruta: /etc/ubuntu/practica_compresion/
-Tamaño: 1.2K
----
-Nombre: ./imagenes/prueba.png
-Ruta: /etc/ubuntu/practica_compresion/imagenes/
+Nombre: prueba.png
+Ruta: ./imagenes/prueba.png
+Tipo: Imagen (PNG)
 Tamaño: 379
 ---
-Nombre: ./imagenes/foto.bmp
-Ruta: /etc/ubuntu/practica_compresion/imagenes/
+Nombre: foto.bmp
+Ruta: ./imagenes/foto.bmp
+Tipo: Imagen (BMP)
 Tamaño: 398
 ---
-Nombre: ./imagenes/Fronalpstock_big.jpg
-Ruta: /etc/ubuntu/practica_compresion/imagenes/
-Tamaño: 14M
----
-Nombre: ./imagenes/tierra.gif
-Ruta: /etc/ubuntu/practica_compresion/imagenes/
+Nombre: tierra.gif
+Ruta: ./imagenes/tierra.gif
+Tipo: Imagen (GIF)
 Tamaño: 2.0K
 ---
-Nombre: ./imagenes/Rotating_earth_(large).gif
-Tamaño: 979K
----
-Nombre: ./imagenes/montaña.jpg
+Nombre: montaña.jpg
+Ruta: ./imagenes/montaña.jpg
+Tipo: Imagen (JPG)
 Tamaño: 22K
 ---
-Nombre: ./resultados_compresion.txt
-Tamaño: 43
+Nombre: resultados_compresion.txt
+Ruta: ./resultados_compresion.txt
+Tipo: Texto (TXT)
+Tamaño: 676
 ---
-Nombre: ./video/video_corto_2.webm
-Tamaño: 2.1K
----
-Nombre: ./video/Big_Buck_Bunny_1080_10s_1MB.mp4
-Tamaño: 1023K
----
-Nombre: ./video/video_corto.mp4
-Tamaño: 2.1K
----
-Nombre: ./video/Big_Buck_Bunny_360_10s_1MB.webm
+Nombre: video2.webm
+Ruta: ./video/video2.webm
+Tipo: Otro (WEBM)
 Tamaño: 1.1M
 ---
-Nombre: ./texto/pride_and_prejudice.txt
+Nombre: video.mp4
+Ruta: ./video/video.mp4
+Tipo: Video (MP4)
+Tamaño: 1023K
+---
+Nombre: video3.avi
+Ruta: ./video/video3.avi
+Tipo: Video (AVI)
+Tamaño: 404
+---
+Nombre: pride_and_prejudice.txt
+Ruta: ./texto/pride_and_prejudice.txt
+Tipo: Texto (TXT)
 Tamaño: 1.6K
 ---
-Nombre: ./texto/1342-0.txt
-Tamaño: 721K
----
-Nombre: ./texto/dummy.pdf
+Nombre: dummy.pdf
+Ruta: ./texto/dummy.pdf
+Tipo: Texto (PDF)
 Tamaño: 523
 ---
-Nombre: ./texto/ejemplo.md
+Nombre: ejemplo.md
+Ruta: ./texto/ejemplo.md
+Tipo: Texto (MD)
 Tamaño: 427
 ---
-Nombre: ./texto/dummy.pdf.1
-Tamaño: 13K
----
+----- Compresion ------
 
-Compresion con gzip
+Compresion con GZIP
 Comando: gzip -v pride_and_prejudice.txt
-pride_and_prejudice.txt:	 73.0% -- replaced with pride_and_prejudice.txt.gz
--rw-rw-r-- 1 ubuntu ubuntu 469 Feb 23 14:35 pride_and_prejudice.txt.gz
+Archivo original: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.txt (1.6K)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.txt.gz (469)
 
-Comando: gzip -v montaña.jpg
-montaña.jpg:	 89.2% -- replaced with montaña.jpg.gz
--rw-rw-r-- 1 ubuntu ubuntu 2.4K Feb 23 14:39 montaña.jpg.gz
+Comando: gzip -v dummy.pdf
+Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (523)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (339)
 
- Descompresion con gunzip
+Comando: gzip -v ejemplo.md
+Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (253)
+
+Descompresion con gzip
+
+Comando: gunzip -v dummy.pdf.gz
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (339)
+Tamaño recuperado: 523
+
+Comando: gunzip -v ejemplo.md.gz
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (253)
+Tamaño recuperado: 427
+
 Comando: gunzip -v pride_and_prejudice.txt.gz
-pride_and_prejudice.txt.gz:	 73.0% -- replaced with pride_and_prejudice.txt
--rw-rw-r-- 1 ubuntu ubuntu 1.6K Feb 23 14:35 pride_and_prejudice.txt
-
-Comando: gunzip -v montaña.jpg.gz
-montaña.jpg.gz:	 89.2% -- replaced with montaña.jpg
--rw-rw-r-- 1 ubuntu ubuntu 22K Feb 23 14:39 montaña.jpg
-
- Compresion con ZIP
-Comando: rar a audio.rar *.wav
-Command 'rar' not found, but can be installed with:
-sudo apt install rar
-
-RAR 7.00   Copyright (c) 1993-2024 Alexander Roshal   26 Feb 2024
-Trial version             Type 'rar -?' for help
-
-Evaluation copy. Please register.
-
-Creating archive audio.rar
-
-Adding    example1.wav                                                   100%  OK 
-Done
--rw-rw-r-- 1 ubuntu ubuntu 347 Feb 23 15:49 audio.rar
-
-Comando: rar a video.rar *.mp4
-
-RAR 7.00   Copyright (c) 1993-2024 Alexander Roshal   26 Feb 2024
-Trial version             Type 'rar -?' for help
-
-Evaluation copy. Please register.
-
-Creating archive video.rar
-
-Adding    Big_Buck_Bunny_1080_10s_1MB.mp4                                 99%  OK 
-Adding    video_corto.mp4                                                100%  OK 
-Done
--rw-rw-r-- 1 ubuntu ubuntu 1020K Feb 23 15:56 video.rar
-
-=== Descompresion con UNRAR ===
-Comando: unrar x ../audio/audio.rar
-
-UNRAR 7.00 freeware      Copyright (c) 1993-2024 Alexander Roshal
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.txt.gz (469)
+Tamaño recuperado: 1.6K
 
 
-Extracting from ../audio/audio.rar
-
-Extracting  example1.wav                                                 100%  OK 
-All OK
-total 4.0K
--rw-rw-r-- 1 ubuntu ubuntu 399 Feb 23 14:46 example1.wav
-Comando: unrar x ../video/video.rar
-
-UNRAR 7.00 freeware      Copyright (c) 1993-2024 Alexander Roshal
+Compresion con ZIP
 
 
-Extracting from ../video/video.rar
+Comando: zip dummy.zip dummy.pdf
+Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (523)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (479)
 
-Extracting  Big_Buck_Bunny_1080_10s_1MB.mp4                               99%  OK 
-Extracting  video_corto.mp4                                              100%  OK 
-All OK
-total 1.1M
--rw-rw-r-- 1 ubuntu ubuntu 1023K Nov 29  2021 Big_Buck_Bunny_1080_10s_1MB.mp4
--rw-rw-r-- 1 ubuntu ubuntu   399 Feb 23 14:46 example1.wav
--rw-rw-r-- 1 ubuntu ubuntu  2.1K Feb 23 14:49 video_corto.mp4
+Comando: zip ejemplo.zip ejemplo.md
+Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (394)
 
-Comando: zip texto.zip *.txt *.md *.pdf
-  adding: 1342-0.txt (deflated 64%)
-  adding: pride_and_prejudice.txt (deflated 73%)
-  adding: ejemplo.md (deflated 48%)
-  adding: dummy.pdf (deflated 41%)
--rw-rw-r-- 1 ubuntu ubuntu 262K Feb 23 23:14 texto.zip
+Comando: zip pride_and_prejudice.zip pride_and_prejudice.txt
+Archivo original: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.txt (1.6K)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.zip (623)
 
-=== Descompresion con unzip===
-Comando: unzip ../texto/texto.zip
-Archive:  ../texto/texto.zip
-  inflating: 1342-0.txt              
-  inflating: pride_and_prejudice.txt  
-  inflating: ejemplo.md              
-  inflating: dummy.pdf               
-total 736K
--rw-rw-r-- 1 ubuntu ubuntu 721K Feb 10 17:53 1342-0.txt
--rw-rw-r-- 1 ubuntu ubuntu  523 Feb 23 14:36 dummy.pdf
--rw-rw-r-- 1 ubuntu ubuntu  427 Feb 23 14:36 ejemplo.md
--rw-rw-r-- 1 ubuntu ubuntu 1.6K Feb 23 14:35 pride_and_prejudice.txt
+
+Descompresion con unzip
+
+Comando: unzip pride_and_prejudice.zip 
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.zip (623)
+Tamaño recuperado: 1.6K
+
+Comando: unzip ejemplo.zip 
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (394)
+Tamaño recuperado: 427
+
+Comando: unzip dummy.zip 
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (479)
+Tamaño recuperado: 523
+
+
+Compresion con rar
+
+Comando: rar a dummy.rar dummy.pdf
+Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (523)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (405)
+
+Comando: rar a ejemplo.rar ejemplo.md
+Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (313)
+
+Comando: rar a pride_and_prejudice.rar pride_and_prejudice.txt
+Archivo original: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.txt (1.6K)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.rar (517)
+
+
+Descompresion con unrar
+
+Comando: unrar x dummy.pdf
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (405)
+Tamaño recuperado: 523
+
+Comando: unrar x ejemplo .rar 
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (313)
+Tamaño recuperado: 427
+
+Comando: unrar x pride_and_prejudice.rar 
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/pride_and_prejudice.rar (517)
+Tamaño recuperado: 1.6K
