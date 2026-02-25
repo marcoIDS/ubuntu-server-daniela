@@ -10,7 +10,7 @@ wget https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf -o 
 cd ../imagen
 
 wget https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg -o montaña.jpg
-wget https://upload.wikimedia.org/wikipedia/commons/3/34/Wget-screenshot.png-o prueba.png
+wget https://upload.wikimedia.org/wikipedia/commons/3/34/Wget-screenshot.png -o prueba.png
 wget https://filesamples.com/samples/image/bmp/sample_640%C3%97426.bmp -o foto.bmp
 cd ../audio
 
@@ -590,8 +590,9 @@ ruta_base=$(pwd) && archivo="example3.ogg" && ruta_absoluta="$ruta_base/$archivo
 echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
-cd ../videoecho "Compresion con gzip" >> ../resultados_compresion.txt
-echo "" >> ../resultados_compresion.texto
+cd ../video
+echo "Compresion con gzip" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
 echo "Comando: gzip -v video_corto.mp4" >> ../resultados_compresion.txt
@@ -623,7 +624,7 @@ echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.
 echo "" >> ../resultados_compresion.txt
 
 echo "Decompresion con gunzip" >> ../resultados_compresion.txt
-echo "" >> ../resultados_compresion.Texto
+echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
 echo "Comando: gunzip -v video_corto.mp4.gz" >> ../resultados_compresion.txt
@@ -653,7 +654,7 @@ echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
 echo "Compresion con zip" >> ../resultados_compresion.txt
-echo "" >> ../resultados_compresion.texto
+echo "" >> ../resultados_compresion.txt
 
 echo "----------------------" >> ../resultados_compresion.txt
 echo "Comando: zip video.zip video_corto.mp4" >> ../resultados_compresion.txt
