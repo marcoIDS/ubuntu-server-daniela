@@ -3,17 +3,17 @@ Archivos originales
 Nombre: example3.ogg
 Ruta: ./audio/example3.ogg
 Tipo: Audio (OGG)
-Tamaño: 411
+Tamaño: 412
 ---
 Nombre: example1.wav
 Ruta: ./audio/example1.wav
 Tipo: Audio (WAV)
-Tamaño: 398
+Tamaño: 399
 ---
 Nombre: example2.mp3
 Ruta: ./audio/example2.mp3
 Tipo: Audio (MP3)
-Tamaño: 413
+Tamaño: 414
 ---
 Nombre: resultados_compresion.txt
 Ruta: ./resultados_compresion.txt
@@ -50,20 +50,20 @@ Ruta: ./imagen/foto.bmp
 Tipo: Imagen (BMP)
 Tamaño: 1.6K
 ---
-Nombre: Fronalpstock_big.jpg
-Ruta: ./imagen/Fronalpstock_big.jpg
-Tipo: Imagen (JPG)
-Tamaño: 14M
----
-Nombre: Wget-screenshot.png
-Ruta: ./imagen/Wget-screenshot.png
-Tipo: Imagen (PNG)
-Tamaño: 4.8K
+Nombre: tierra.gif
+Ruta: ./imagen/tierra.gif
+Tipo: Imagen (GIF)
+Tamaño: 2.0K
 ---
 Nombre: sample_640×426.bmp
 Ruta: ./imagen/sample_640×426.bmp
 Tipo: Imagen (BMP)
 Tamaño: 799K
+---
+Nombre: Rotating_earth_(large).gif
+Ruta: ./imagen/Rotating_earth_(large).gif
+Tipo: Imagen (GIF)
+Tamaño: 979K
 ---
 Nombre: montaña.jpg
 Ruta: ./imagen/montaña.jpg
@@ -101,33 +101,33 @@ Compresion con gzip
 ----------------------
 Comando: gzip -v texto.txt
 Archivo original: /home/ubuntu/practica_compresion/texto/texto.txt (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.txt.gz (458)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.txt.gz (455)
 
 ----------------------
 Comando: gzip -v ejemplo.md
 Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (255)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (253)
 
 ----------------------
 Comando: gzip -v dummy.pdf
 Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (522)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (341)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (339)
 
 Decompresion con gunzip
 
 ----------------------
 Comando: gunzip -v dummy.pdf.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (341)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.pdf.gz (339)
 Tamaño recuperado: 522
 
 ----------------------
 Comando: gunzip -v ejemplo.md.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (255)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.md.gz (253)
 tamaño recuperado: 427
 
 ----------------------
 Comando: gunzip -v texto.txt.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.txt.gz (458)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.txt.gz (455)
 tamaño recuperado: 1.6K
 
 Compresion con zip
@@ -135,33 +135,33 @@ Compresion con zip
 ----------------------
 Comando: zip texto.zip texto.txt  
 Archivo original: /home/ubuntu/practica_compresion/texto/texto.txt (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.zip (598)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.zip (595)
 
 ----------------------
 Comando: zip ejemplo.zip ejemplo.md
 Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (396)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (394)
 
 ----------------------
 Comando: zip dummy.zip dummy.pdf
 Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (522)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (481)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (479)
 
 Decompresion con unzip
 
 ----------------------
 Comando: unzip ejemplo.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (396)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.zip (394)
 tamaño recuperado: 427
 
 ----------------------
 Comando: unzip dummy.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (481)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.zip (479)
 tamaño recuperado: 522
 
 ----------------------
 Comando: unzip texto.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.zip (598)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.zip (595)
 tamaño recuperado: 1.6K
 
 Compresion con rar
@@ -169,32 +169,32 @@ Compresion con rar
 ----------------------
 Comando: rar a ejemplo.rar ejemplo.md
 Archivo original: /home/ubuntu/practica_compresion/texto/ejemplo.md (427)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (313)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (314)
 
 ----------------------
 Comando: rar a dummy.rar dummy.pdf
 Archivo original: /home/ubuntu/practica_compresion/texto/dummy.pdf (522)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (407)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (404)
 
 ----------------------
 Comando: rar a texto.rar texto.txt
 Archivo original: /home/ubuntu/practica_compresion/texto/texto.txt (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.rar (500)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.rar (497)
 Decompresion con unrar
 
 ----------------------
 Comando: unrar x ejemplo.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (313)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/ejemplo.rar (314)
 tamaño recuperado: 427
 
 ----------------------
 Comando: unrar x dummy.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (407)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/dummy.rar (404)
 tamaño recuperado: 522
 
 ----------------------
 Comando: unrar x texto.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.rar (500)
+Archivo comprimido: /home/ubuntu/practica_compresion/texto/texto.rar (497)
 tamaño recuperado: 1.6K
 
 Compresion con gzip
@@ -207,12 +207,17 @@ Archivo comprimido: /home/ubuntu/practica_compresion/imagen/montaña.jpg.gz (2.4
 ----------------------
 Comando: gzip -v prueba.png
 Archivo original: /home/ubuntu/practica_compresion/imagen/prueba.png (555)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.png.gz (327)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.png.gz (326)
 
 ----------------------
 Comando: gzip -v foto.bmp
 Archivo original: /home/ubuntu/practica_compresion/imagen/foto.bmp (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.bmp.gz (448)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.bmp.gz (450)
+
+----------------------
+Comando: gzip -v tierra.gif
+Archivo original: /home/ubuntu/practica_compresion/imagen/tierra.gif (2.0K)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.gif.gz (531)
 
 Decompresion con gunzip
 
@@ -223,13 +228,18 @@ tamaño recuperado: 22K
 
 ----------------------
 Comando: gunzip -v prueba.png.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.png.gz (327)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.png.gz (326)
 tamaño recuperado: 555
 
 ----------------------
 Comando: gunzip -v foto.bmp.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.bmp.gz (448)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.bmp.gz (450)
 tamaño recuperado: 1.6K
+
+----------------------
+Comando: gunzip -v tierra.gif.gz
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.gif.gz (531)
+tamaño recuperado: 2.0K
 
 Compresion con zip
 
@@ -241,12 +251,17 @@ Archivo comprimido: /home/ubuntu/practica_compresion/imagen/montaña.zip (2.5K)
 ----------------------
 Comando: zip prueba.zip prueba.png
 Archivo original: /home/ubuntu/practica_compresion/imagen/prueba.png (555)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.zip (468)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.zip (467)
 
 ----------------------
 Comando: zip foto.zip foto.bmp
 Archivo original: /home/ubuntu/practica_compresion/imagen/foto.bmp (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.zip (587)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.zip (589)
+
+----------------------
+Comando: zip tierra.zip tierra.gif
+Archivo original: /home/ubuntu/practica_compresion/imagen/tierra.gif (2.0K)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.zip (672)
 
 Decompresion con unzip
 
@@ -257,13 +272,18 @@ tamaño recuperado: 22K
 
 ----------------------
 Comando: unzip prueba.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.zip (468)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.zip (467)
 tamaño recuperado: 555
 
 ----------------------
 Comando: unzip foto.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.zip (587)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.zip (589)
 tamaño recuperado: 1.6K
+
+----------------------
+Comando: unzip tierra.zip
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.zip (672)
+tamaño recuperado: 2.0K
 
 Compresion con rar
 
@@ -275,12 +295,17 @@ Archivo comprimido: /home/ubuntu/practica_compresion/imagen/montaña.rar (2.0K)
 ----------------------
 Comando: rar a prueba.rar
 Archivo original: /home/ubuntu/practica_compresion/imagen/prueba.png (555)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.rar (389)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.rar (390)
 
 ----------------------
 Comando: rar a foto.rar
 Archivo original: /home/ubuntu/practica_compresion/imagen/foto.bmp (1.6K)
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.rar (493)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.rar (490)
+
+----------------------
+Comando: rar a tierra.rar
+Archivo original: /home/ubuntu/practica_compresion/imagen/tierra.gif (2.0K)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.rar (563)
 
 Decompresion con unrar
 
@@ -291,148 +316,152 @@ tamaño recuperado: 22K
 
 ----------------------
 Comando: unrar x prueba.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.rar (389)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/prueba.rar (390)
 tamaño recuperado: 555
 
 ----------------------
 Comando: unrar x foto.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.rar (493)
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/foto.rar (490)
 tamaño recuperado: 1.6K
 
+----------------------
+Comando: unrar x tierra.rar
+Archivo comprimido: /home/ubuntu/practica_compresion/imagen/tierra.rar (563)
+tamaño recuperado: 2.0K
 Compresion con gzip
 
 ----------------------
 Comando: gzip -v example1.wav
-Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (398)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.wav.gz (276)
+Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (399)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.wav.gz (275)
 
 ----------------------
 Comando: gzip -v example2.mp3
-Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (413)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.mp3.gz (283)
+Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (414)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.mp3.gz (284)
 
 ----------------------
 Comando: gzip -v example3.ogg
-Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (411)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.ogg.gz (281)
+Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (412)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.ogg.gz (282)
 
 Descompresion con gunzip
 
 ----------------------
 Comando: gunzip -v example1.wav.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.wav.gz (276)
-tamaño recuperado: 398
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.wav.gz (275)
+tamaño recuperado: 399
 
 ----------------------
 Comando: gunzip -v example2.mp3.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.mp3.gz (283)
-tamaño recuperado: 413
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.mp3.gz (284)
+tamaño recuperado: 414
 
 ----------------------
 Comando: gunzip -v example3.ogg.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.ogg.gz (281)
-tamaño recuperado: 411
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.ogg.gz (282)
+tamaño recuperado: 412
 
 Compresion con zip
 
 ----------------------
 Comando: zip example1.zip example1.wav
-Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (398)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.zip (419)
+Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (399)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.zip (418)
 
 ----------------------
 Comando: zip example2.zip example2.mp3
-Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (413)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.zip (426)
+Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (414)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.zip (427)
 
 ----------------------
 Comando: zip example3.zip example3.ogg
-Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (411)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.zip (424)
+Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (412)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.zip (425)
 
 Descompresion con unzip
 
 ----------------------
 Comando: unzip example1.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.zip (419)
-tamaño recuperado: 398
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.zip (418)
+tamaño recuperado: 399
 
 ----------------------
 Comando: unzip example2.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.zip (426)
-tamaño recuperado: 413
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.zip (427)
+tamaño recuperado: 414
 
 ----------------------
 Comando: unzip example3.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.zip (424)
-tamaño recuperado: 411
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.zip (425)
+tamaño recuperado: 412
 
 Compresion con rar
 
 ----------------------
 Comando: rar a example1.rar example1.wav
-Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (398)
+Archivo original: /home/ubuntu/practica_compresion/audio/example1.wav (399)
 Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.rar (338)
 
 ----------------------
 Comando: rar a example2.rar example2.mp3
-Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (413)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.rar (349)
+Archivo original: /home/ubuntu/practica_compresion/audio/example2.mp3 (414)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.rar (347)
 
 ----------------------
 Comando: rar a example3.rar example3.ogg
-Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (411)
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.rar (344)
+Archivo original: /home/ubuntu/practica_compresion/audio/example3.ogg (412)
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.rar (345)
 
 Decompresion con unrar
 
 ----------------------
 Comando: unrar x example1.rar
 Archivo comprimido: /home/ubuntu/practica_compresion/audio/example1.rar (338)
-tamaño recuperado: 398
+tamaño recuperado: 399
 
 ----------------------
 Comando: unrar x example2.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.rar (349)
-tamaño recuperado: 413
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example2.rar (347)
+tamaño recuperado: 414
 
 ----------------------
 Comando: unrar x example3.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.rar (344)
-tamaño recuperado: 411
+Archivo comprimido: /home/ubuntu/practica_compresion/audio/example3.rar (345)
+tamaño recuperado: 412
 
 Compresion con gzip
 
 ----------------------
 Comando: gzip -v video_corto.mp4
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto.mp4 (2.1K)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto.mp4.gz (554)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto.mp4.gz (553)
 
 ----------------------
 Comando: gzip -v video_corto_2.avi
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_2.avi (391)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_2.avi.gz (274)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_2.avi.gz (276)
 
 ----------------------
 Comando: gzip -v video_corto_3.mov
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_3.mov (373)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_3.mov.gz (261)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_3.mov.gz (263)
 
 Decompresion con gunzip
 
 ----------------------
 Comando: gunzip -v video_corto.mp4.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto.mp4.gz (554)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto.mp4.gz (553)
 tamaño recuperado: 2.1K
 
 ----------------------
 Comando: gunzip -v video_corto_2.avi.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_2.avi.gz (274)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_2.avi.gz (276)
 tamaño recuperado: 391
 
 ----------------------
 Comando: gunzip -v video_corto_3.mov.gz
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_3.mov.gz (261)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video_corto_3.mov.gz (263)
 tamaño recuperado: 373
 
 Compresion con zip
@@ -440,33 +469,33 @@ Compresion con zip
 ----------------------
 Comando: zip video.zip video_corto.mp4
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto.mp4 (2.1K)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video.zip (700)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video.zip (699)
 
 ----------------------
 Comando: zip video2.zip video_corto_2.avi
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_2.avi (391)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.zip (422)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.zip (424)
 
 ----------------------
 Comando: zip video3.zip video_corto_3.mov
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_3.mov (373)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.zip (409)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.zip (411)
 
 Decompresion con unzip
 
 ----------------------
 Comando: unzip video.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video.zip (700)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video.zip (699)
 tamaño recuperado: 2.1K
 
 ----------------------
 Comando: unzip video2.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.zip (422)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.zip (424)
 tamaño recuperado: 391
 
 ----------------------
 Comando: unzip video3.zip
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.zip (409)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.zip (411)
 tamaño recuperado: 373
 
 Compresion con rar
@@ -474,32 +503,45 @@ Compresion con rar
 ----------------------
 Comando: rar a video.rar
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto.mp4 (2.1K)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video.rar (596)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video.rar (591)
 
 ----------------------
 Comando: rar a video2.rar
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_2.avi (391)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.rar (331)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.rar (332)
 
 ----------------------
 Comando: rar a video3.rar
 Archivo original: /home/ubuntu/practica_compresion/video/video_corto_3.mov (373)
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.rar (322)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.rar (320)
 
 Descompresion con unrar
 
 ----------------------
 Comando: unrar x video.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video.rar (596)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video.rar (591)
 tamaño recuperado: 2.1K
 
 ----------------------
 Comando: unrar x video2.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.rar (331)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video2.rar (332)
 tamaño recuperado: 391
 
 ----------------------
 Comando: unrar x video3.rar
-Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.rar (322)
+Archivo comprimido: /home/ubuntu/practica_compresion/video/video3.rar (320)
 tamaño recuperado: 373
 
+----------------------
+Comando: ls -l
+total 1060
+-rw-rw-r-- 1 ubuntu ubuntu 1046987 Nov 29  2021 Big_Buck_Bunny_1080_10s_1MB.mp4
+-rw-rw-r-- 1 ubuntu ubuntu     591 Feb 26 02:57 video.rar
+-rw-rw-r-- 1 ubuntu ubuntu     699 Feb 26 02:57 video.zip
+-rw-rw-r-- 1 ubuntu ubuntu     332 Feb 26 02:57 video2.rar
+-rw-rw-r-- 1 ubuntu ubuntu     424 Feb 26 02:57 video2.zip
+-rw-rw-r-- 1 ubuntu ubuntu     320 Feb 26 02:57 video3.rar
+-rw-rw-r-- 1 ubuntu ubuntu     411 Feb 26 02:57 video3.zip
+-rw-rw-r-- 1 ubuntu ubuntu    2143 Feb 26 02:57 video_corto.mp4
+-rw-rw-r-- 1 ubuntu ubuntu     391 Feb 26 02:57 video_corto_2.avi
+-rw-rw-r-- 1 ubuntu ubuntu     373 Feb 26 02:57 video_corto_3.mov
