@@ -12,6 +12,9 @@ cd ../imagen
 wget https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg -o montaña.jpg
 wget https://upload.wikimedia.org/wikipedia/commons/3/34/Wget-screenshot.png -o prueba.png
 wget https://filesamples.com/samples/image/bmp/sample_640%C3%97426.bmp -o foto.bmp
+wget https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif -o tierra.gif
+
+rm Fronalpstock_big.jpg Wget-screenshot.png sample_640x426.bmp Rotating_earth_%28large%29.gif
 cd ../audio
 
 wget https://file-examples.com/wp-content/storage/2017/11/file_example_WAV_1MG.wav -o example1.wav
@@ -245,6 +248,16 @@ ruta_base=$(pwd) && archivo="foto.bmp.gz" && ruta_absoluta="$ruta_base/$archivo"
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: gzip -v tierra.gif" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo original: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+gzip -v tierra.gif
+ruta_base=$(pwd) && archivo="tierra.gif.gz" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
+
+
 echo "Decompresion con gunzip" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
@@ -275,6 +288,15 @@ ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: gunzip -v tierra.gif.gz" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.gif.gz" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+gunzip -v tierra.gif.gz
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
+
 echo "Compresion con zip" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
@@ -302,6 +324,15 @@ ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "Archivo original: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 zip foto.zip foto.bmp
 ruta_base=$(pwd) && archivo="foto.zip" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
+
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: zip tierra.zip tierra.gif" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo original: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+zip tierra.zip tierra.gif
+ruta_base=$(pwd) && archivo="tierra.zip" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
@@ -336,6 +367,15 @@ ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: unzip tierra.zip" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.zip" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+unzip tierra.zip
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
+
 echo "Compresion con rar" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
@@ -363,6 +403,15 @@ ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" &&
 echo "Archivo original: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 rar a foto.rar foto.bmp
 ruta_base=$(pwd) && archivo="foto.rar" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+echo "" >> ../resultados_compresion.txt
+
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: rar a tierra.rar" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo original: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+rar a tierra.rar tierra.gif
+ruta_base=$(pwd) && archivo="tierra.rar" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
 echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
 
@@ -396,6 +445,14 @@ unrar x foto.rar
 ruta_base=$(pwd) && archivo="foto.bmp" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
 echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 echo "" >> ../resultados_compresion.txt
+
+echo "----------------------" >> ../resultados_compresion.txt
+echo "Comando: unrar x tierra.rar" >> ../resultados_compresion.txt
+ruta_base=$(pwd) && archivo="tierra.rar" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "Archivo comprimido: $ruta_absoluta ($tamano)" >> ../resultados_compresion.txt
+unrar x tierra.rar
+ruta_base=$(pwd) && archivo="tierra.gif" && ruta_absoluta="$ruta_base/$archivo" && tamano=$(ls -lh "$ruta_absoluta" | awk '{print $5}')
+echo "tamaño recuperado: $tamano" >> ../resultados_compresion.txt
 
 cd ../audio
 echo "Compresion con gzip" >> ../resultados_compresion.txt
